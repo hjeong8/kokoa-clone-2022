@@ -1,0 +1,27 @@
+.badge {
+  width: 25px;
+  height: 25px;
+  @include flexbox;
+  background: $orange;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.nav-chat-alarm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -120%);
+}
+.new-alarm {
+  width: 5px;
+  height: 5px;
+  background: $orange;
+  border-radius: 50%;
+}
+.nav-dot-alarm {
+  position: absolute;
+  top: -50%;
+  right: -10%;
+}

@@ -7,6 +7,21 @@
 
 @import 'mixins/flexbox';
 
+@import 'component/badge';
+@import 'component/header';
+@import 'component/nav';
 @import 'component/status-bar';
+@import 'component/sub-title';
+@import 'component/user-component';
 
 @import 'screen/login';
+@import 'screen/friends';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+}
+.main-screen {
+  margin-top: 100px;
+  padding: 0px $horizontal-space;
+}
