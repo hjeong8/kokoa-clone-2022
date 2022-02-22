@@ -41,6 +41,11 @@
     &-column {
       @include flexbox(start);
 
+      h6 {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
       i {
         margin-top: 5px;
         margin-left: 5px;
