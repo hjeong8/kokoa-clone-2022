@@ -1,0 +1,67 @@
+#chatting-bg {
+  background-color: #f08080;
+  height: 150vh;
+
+  .status-bar,
+  .center-header {
+    background-color: lightcoral;
+  }
+}
+.chatting-date {
+  @include flexbox;
+
+  span {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 8px 20px 10px;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+    font-size: 13px;
+  }
+}
+.reply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  @include flexbox(between);
+  box-sizing: border-box;
+  padding: 10px 15px;
+
+  i {
+    flex-grow: 1;
+  }
+
+  &-ing {
+    flex-grow: 9;
+    position: relative;
+    display: flex;
+
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      font-size: 17px;
+    }
+
+    & > i {
+      position: absolute;
+      top: 12px;
+      right: 50px;
+      opacity: 0.7;
+    }
+
+    & > button {
+      background-color: var(--yellow);
+      border-radius: 50%;
+      position: absolute;
+      top: 6px;
+      right: 7px;
+      border: none;
+      padding: 7px 10px;
+    }
+  }
+}
