@@ -28,20 +28,20 @@
 }
 
 .center-header {
-  @include flexbox;
+  @include flexbox(between);
   padding: $horizontal-space;
   margin-bottom: 10px;
 
-  &:first-child {
+  &-column:first-child {
     width: 20px;
     @include flexbox(start);
   }
 
-  &:nth-child(2) {
+  &-column:nth-child(2) {
     width: 60%;
   }
 
-  &:last-child {
+  &-column:last-child {
     width: 20px;
     @include flexbox(end);
 

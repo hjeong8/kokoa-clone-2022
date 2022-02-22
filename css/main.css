@@ -511,14 +511,14 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 20px;
   margin-bottom: 10px;
 }
 
-.center-header:first-child {
+.center-header-column:first-child {
   width: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,11 +531,11 @@ template {
           justify-content: flex-start;
 }
 
-.center-header:nth-child(2) {
+.center-header-column:nth-child(2) {
   width: 60%;
 }
 
-.center-header:last-child {
+.center-header-column:last-child {
   width: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +548,7 @@ template {
           justify-content: flex-end;
 }
 
-.center-header:last-child a {
+.center-header-column:last-child a {
   margin-left: 15px;
 }
 
@@ -827,6 +827,68 @@ template {
   font-size: 15px;
 }
 
+.settings-list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings-list li:last-child {
+  border-bottom: none;
+}
+
+.settings-list li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.settings-list li a i {
+  margin-right: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.settings-list-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.settings-list-column:last-child {
+  color: #bbb;
+}
+
+.settings-list-column span {
+  padding-left: 15px;
+  text-transform: capitalize;
+}
+
+.settings-list-column .badge {
+  margin-left: 10px;
+  padding: 0;
+}
+
+.wide-line {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.settings-main > .main-screen:not(:first-child) {
+  margin-top: 10px;
+}
+
 .welcome-header {
   margin: 100px 25px;
   display: -webkit-box;
@@ -1056,6 +1118,99 @@ template {
 
 .more-icon-row {
   margin: 20px 0 30px 0;
+}
+
+#chatting-bg {
+  background-color: #f08080;
+  height: 150vh;
+}
+
+#chatting-bg .status-bar,
+#chatting-bg .center-header {
+  background-color: lightcoral;
+}
+
+.chatting-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chatting-date span {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 8px 20px 10px;
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+.reply i {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.reply-ing {
+  -webkit-box-flex: 9;
+      -ms-flex-positive: 9;
+          flex-grow: 9;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reply-ing input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  font-size: 17px;
+}
+
+.reply-ing > i {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  opacity: 0.7;
+}
+
+.reply-ing > button {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  border: none;
+  padding: 7px 10px;
 }
 
 body {

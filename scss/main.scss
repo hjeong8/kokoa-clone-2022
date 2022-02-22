@@ -15,10 +15,12 @@
 @import 'component/sub-title';
 @import 'component/user-component';
 
-@import 'screen/login';
-@import 'screen/friends';
-@import 'screen/find';
-@import 'screen/more';
+@import 'pages/settings';
+@import 'pages/login';
+@import 'pages/friends';
+@import 'pages/find';
+@import 'pages/more';
+@import 'pages/chatting';
 
 body {
   font-family: 'Open Sans', sans-serif;
