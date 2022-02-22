@@ -1121,13 +1121,13 @@ template {
 }
 
 #chatting-bg {
-  background-color: #f08080;
+  background-color: #abc1d1;
   height: 150vh;
 }
 
 #chatting-bg .status-bar,
 #chatting-bg .center-header {
-  background-color: lightcoral;
+  background-color: #abc1d1;
 }
 
 .chatting-date {
