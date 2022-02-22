@@ -9,6 +9,7 @@
 
 @import 'component/badge';
 @import 'component/header';
+@import 'component/icon-row';
 @import 'component/nav';
 @import 'component/status-bar';
 @import 'component/sub-title';
@@ -16,6 +17,7 @@
 
 @import 'screen/login';
 @import 'screen/friends';
+@import 'screen/find';
 
 body {
   font-family: 'Open Sans', sans-serif;
